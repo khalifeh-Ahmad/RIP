@@ -1,0 +1,216 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* footer design */
+
+.footer {
+  background: #2d393d;
+}
+
+footer p {
+  color: #969ea7;
+  line-height: 26px;
+}
+
+footer h6 {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+footer .news-letter h6 {
+  float: left;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+footer .news-letter form {
+  float: right;
+  width: 70%;
+}
+
+footer .news-letter input {
+  border: 1px solid #3c4450;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  background: none;
+}
+
+footer .news-letter button {
+  background: #eeac0b;
+  width: 55px;
+  height: 50px;
+  float: right;
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-info {
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 50px;
+}
+
+.links {
+  list-style: none;
+}
+
+.footer-info .links li {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  position: relative;
+}
+
+.footer-info .links li:before {
+  content: "\f0da";
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  color: #969ea7;
+  font-family: 'FontAwesome';
+}
+
+.footer-info .links li a {
+  color: #969ea7;
+  line-height: 40px;
+  font-size: 13px;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0);
+}
+
+.footer-info .links li a:hover {
+  color: #fff;
+  border-bottom: 1px dashed #fff;
+}
+
+.footer-info .quote .form-control {
+  background: none;
+  border-radius: 0px;
+  border: 1px solid #3f4753;
+  margin-bottom: 20px;
+  height: 40px;
+  font-size: 13px;
+}
+
+.footer-info .quote textarea.form-control {
+  height: 80px;
+}
+
+.footer-info .personal-info {
+  margin-top: 30px;
+
+}
+
+.footer-info .personal-info li {
+  color: #969ea7;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #3c4450;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer-info .personal-info li i {
+  font-size: 18px;
+  color: #969ea7;
+  margin-right: 20px;
+  float: left;
+  margin-top: 5px;
+}
+
+.rights {
+  background: #161c28;
+  margin-top: 50px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.rights p {
+  margin: 0px;
+}
+
+.social_icons li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social_icons li a {
+  background: #4f5662;
+  height: 31px;
+  width: 31px;
+  text-align: center;
+  line-height: 31px;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.social_icons li a:hover {
+  background: #eeac0b;
+}
+
+.follow {
+  text-align: center;
+  padding-right: 150px;
+  font-size: larger;
+}
+
+.logo-footer{
+  height: 100px;
+  width: 100px;
+}
