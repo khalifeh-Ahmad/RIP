@@ -225,13 +225,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <ParallaxImage
-          src="../../public/images/p1.jpg"
-          alt="Funeral Planning"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1.5 }}
-        />
+        <ParallaxImage src="../assets/img/s5.jpg?v1" />
         <Box onClick={handleStartPlanning}>
           <Typography variant="h4" gutterBottom>
             Funeral Planning
@@ -249,7 +243,7 @@ const Home = () => {
         transition={{ delay: 1, duration: 1 }}
       >
         <ParallaxImage
-          src="../assets/img/p3.png"
+          src="../assets/img/s2.jpg"
           alt="Legacy Planning"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -273,8 +267,7 @@ const Home = () => {
         transition={{ delay: 1.5, duration: 1 }}
       >
         <ParallaxImage
-          src="../../public/assets/img/banner1.png"
-          alt="Virtual Support"
+          src="../assets/img/logo1.png"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1.5 }}
@@ -296,7 +289,7 @@ const Home = () => {
         transition={{ delay: 2, duration: 1 }}
       >
         <ParallaxImage
-          src="../assets/img/p3.png"
+          src="../assets/img/s4.jpg"
           alt="Virtual Memorialization"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
