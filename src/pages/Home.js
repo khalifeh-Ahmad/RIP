@@ -14,6 +14,35 @@ const fadeIn = keyframes`
   100% { opacity: 1; transform: translateY(0); }
 `;
 
+const heroFadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+`;
+
+const hoverEffect = keyframes`
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+`;
 const gradientAnimation = keyframes`
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -39,9 +68,28 @@ const HomeContainer = styled(Box)`
 const HeroSection = styled(motion(Box))`
   text-align: center;
   margin-bottom: 50px;
-  animation: ${fadeIn} 1.5s ease;
   width: 100%;
   max-width: 1200px;
+  animation: ${heroFadeIn} 1.8s ease-out;
+
+  /* Adding more animated effects for a smooth entrance */
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffd700;
+    opacity: 0;
+    animation: ${heroFadeIn} 2.2s ease forwards;
+  }
+
+  /* Hover effect */
+  &:hover {
+    animation: ${hoverEffect} 0.6s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
 `;
 
 const ParallaxSection = styled(motion(Box))`

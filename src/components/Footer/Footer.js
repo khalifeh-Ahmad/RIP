@@ -87,7 +87,7 @@ const Footer = () => {
                 <img
                   className="margin-bottom-30 logo-footer"
                   src="../../assets/img/logo.png"
-                  alt=""
+                  alt="logo"
                 />
               </div>
             </div>

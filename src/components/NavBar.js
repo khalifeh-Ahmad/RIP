@@ -23,10 +23,11 @@ const NavBar = () => {
                   <div className="logo">
                     <a href="" className="p-0">
                       <img
-                        src={require("../assets/img/logo.png")}
+                        src={require("../assets/img/logo1.png")}
                         width="100"
                         height="50"
                         alt="Logo"
+                        style={{ borderRadius: "50%" }}
                       />
                     </a>
                   </div>
