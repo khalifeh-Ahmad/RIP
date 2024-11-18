@@ -109,12 +109,27 @@ const ParallaxSection = styled(motion(Box))`
   overflow: hidden;
   transform: translateZ(0);
   transition: all 1s ease;
+
+  --c: #eeac0b;
+  --b: 3px;
+  --g: 10px;
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%, var(--c) 0;
+  background: conic-gradient(
+        from 180deg at top var(--b) right var(--b),
+        var(--_g)
+      )
+      var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+    conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0
+      var(--_i, 200%) / var(--_i, var(--b)) 200% no-repeat;
+  transition: 0.3s, background-position 0.3s 0.3s;
+  cursor: pointer;
+
   &:hover {
     transform: scale(1.1) !important;
     cursor: pointer;
-  
-    filter: drop-shadow(2px 2px 0 #eeac0b) drop-shadow(-2px 2px 0 #eeac0b)
-      drop-shadow(2px -2px 0 #eeac0b) drop-shadow(-2px -2px 0 #eeac0b);
+    --_i: 100%;
+    transition: 0.5s, background-size 0.5s 0.5s;
   }
 `;
 
@@ -126,6 +141,7 @@ const ParallaxImage = styled(motion.img)`
   animation: ${fadeIn} 2s ease;
   transform: translateZ(0);
   transition: transform 0.5s ease;
+
   &:hover {
     transform: translateZ(30px) scale(1.05);
   }
