@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Img1 from "../assets/img/s1.jpg";
+import Img2 from "../assets/img/s2.jpg";
+import Img3 from "../assets/img/s3.jpg";
+import Img4 from "../assets/img/s4.jpg";
 // Keyframes for animation
 const fadeIn = keyframes`
   0% { opacity: 0; transform: translateY(20px); }
@@ -109,6 +112,9 @@ const ParallaxSection = styled(motion(Box))`
   &:hover {
     transform: scale(1.1) !important;
     cursor: pointer;
+  
+    filter: drop-shadow(2px 2px 0 #eeac0b) drop-shadow(-2px 2px 0 #eeac0b)
+      drop-shadow(2px -2px 0 #eeac0b) drop-shadow(-2px -2px 0 #eeac0b);
   }
 `;
 
@@ -225,7 +231,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <ParallaxImage src="../assets/img/s5.jpg?v1" />
+        <ParallaxImage src={Img1} />
         <Box onClick={handleStartPlanning}>
           <Typography variant="h4" gutterBottom>
             Funeral Planning
@@ -243,7 +249,7 @@ const Home = () => {
         transition={{ delay: 1, duration: 1 }}
       >
         <ParallaxImage
-          src="../assets/img/s2.jpg"
+          src={Img2}
           alt="Legacy Planning"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -267,7 +273,7 @@ const Home = () => {
         transition={{ delay: 1.5, duration: 1 }}
       >
         <ParallaxImage
-          src="../assets/img/logo1.png"
+          src={Img3}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1.5 }}
@@ -289,7 +295,7 @@ const Home = () => {
         transition={{ delay: 2, duration: 1 }}
       >
         <ParallaxImage
-          src="../assets/img/s4.jpg"
+          src={Img4}
           alt="Virtual Memorialization"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

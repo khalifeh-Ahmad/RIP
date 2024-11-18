@@ -1,10 +1,11 @@
 // Enhanced version of Footer.js
 // import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 // import styled from "styled-components";
 import "../../App.css";
 import "./animate.css";
 import "./font-awesome.min.css";
+import logo from "../../assets/img/logo1.png";
 
 const Footer = () => {
   return (
@@ -86,7 +87,7 @@ const Footer = () => {
               <div className="follow">
                 <img
                   className="margin-bottom-30 logo-footer"
-                  src="../../assets/img/logo.png"
+                  src={logo}
                   alt="logo"
                 />
               </div>

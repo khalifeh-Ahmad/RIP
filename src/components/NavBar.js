@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
+import About from "../pages/About";
 
 const NavBar = () => {
   return (
@@ -11,17 +14,23 @@ const NavBar = () => {
                 <div className="top-menu">
                   <div className="ls-menu">
                     <div>
-                      <a href="about.html">About</a>
+                      <Button color="inherit" component={Link} to="/about">
+                        About
+                      </Button>
                     </div>
                     <div>
-                      <a href="clients.html">Clients</a>
+                      <Button color="inherit" component={Link} to="/clinets">
+                        Clients
+                      </Button>
                     </div>
                     <div>
-                      <a href="media.html">Media</a>
+                      <Button color="inherit" component={Link} to="/media">
+                        Media
+                      </Button>
                     </div>
                   </div>
                   <div className="logo">
-                    <a href="" className="p-0">
+                    <a href="/" className="p-0">
                       <img
                         src={require("../assets/img/logo1.png")}
                         width="100"
@@ -33,15 +42,24 @@ const NavBar = () => {
                   </div>
                   <div className="rs-menu">
                     <div>
-                      <a href="contact.html">Contact</a>
+                      <Button color="inherit" component={Link} to="/contact">
+                        Contact
+                      </Button>
                     </div>
                     <div className="menu-inq-div">
-                      <a href="#2" className="menu-inq">
+                      <Button
+                        className="menu-inq"
+                        color="inherit"
+                        component={Link}
+                        to="/services"
+                      >
                         Services
-                      </a>
+                      </Button>
                     </div>
                     <div>
-                      <a href="#3">Locations</a>
+                      <Button color="inherit" component={Link} to="/locations">
+                        Locations
+                      </Button>
                     </div>
                     <div className="topmenu-btns">
                       <div className="audio-btn">

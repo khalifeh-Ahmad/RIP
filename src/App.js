@@ -8,15 +8,14 @@ import Dashboard from "./pages/Dashboard";
 import Memorials from "./pages/Memorials";
 import GlobalStyles from "./GlobalStyles";
 import NavBar from "./components/NavBar";
-
-
+import AppRouter from "./routes/AppRouter";
 
 const App = () => {
   return (
     <Router>
       <GlobalStyles />
       {/* <Header /> */}
-      <NavBar/>
+      <NavBar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
