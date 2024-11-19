@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "about": "About",
+    "clients": "Clients",
+    "media": "Media",
+    "contact": "Contactez-nous",
+    "location": "Emplacement",
+    "services": "Services"
+  },
+  "home": {
+    "fnPln": "Planification des funérailles",
+    "legacyPlnSrv": "Services de planification successorale",
+    "Recherche": "Recherche",
+    "Annuler": "Annuler"
+  }
+}

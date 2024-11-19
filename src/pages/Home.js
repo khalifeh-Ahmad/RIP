@@ -4,14 +4,20 @@ import { Box, Button, Typography } from "@mui/material";
 import styled, { keyframes } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import HoverCard from "../components/HoverCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import Img1 from "../assets/img/b1.png";
+// import Img2 from "../assets/img/b2.png";
+// import Img3 from "../assets/img/b3.png";
+// import Img4 from "../assets/img/s4.jpg";
 import Img1 from "../assets/img/s1.jpg";
 import Img2 from "../assets/img/s2.jpg";
 import Img3 from "../assets/img/s3.jpg";
 import Img4 from "../assets/img/s4.jpg";
 // Keyframes for animation
+
 const fadeIn = keyframes`
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -155,10 +161,8 @@ const AnimatedButton = styled(Button)`
     box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
   }
 `;
-
 const Home = () => {
   const navigate = useNavigate();
-
   const handleStartPlanning = () => {
     navigate("/wizard");
   };

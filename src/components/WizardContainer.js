@@ -2,7 +2,15 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { AppBar, Toolbar, Typography, Button, Container as MuiContainer } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Container as MuiContainer,
+} from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled(MuiContainer)`
   width: 80%;
@@ -124,14 +132,21 @@ const ProgressBar = styled.div`
   overflow: hidden;
 
   div {
-    width: ${({ currentStep, totalSteps }) => (currentStep / totalSteps) * 100}%;
+    width: ${({ currentStep, totalSteps }) =>
+      (currentStep / totalSteps) * 100}%;
     height: 100%;
     background-color: #eeac0b;
     transition: width 0.3s ease;
   }
 `;
 
-const WizardContainer = ({ currentStep, steps, children, handleNext, handlePrev }) => {
+const WizardContainer = ({
+  currentStep,
+  steps,
+  children,
+  handleNext,
+  handlePrev,
+}) => {
   return (
     <Container>
       <ProgressBar currentStep={currentStep} totalSteps={steps.length}>
@@ -155,7 +170,7 @@ const WizardContainer = ({ currentStep, steps, children, handleNext, handlePrev 
       </Content>
       <ButtonGroup>
         <button onClick={handlePrev} disabled={currentStep === 1}>
-          <i className="fas fa-arrow-left"></i> Back
+          <FontAwesomeIcon icon={faArrowLeft} /> Back
         </button>
         <button onClick={handleNext}>
           {currentStep === steps.length ? (
@@ -164,7 +179,7 @@ const WizardContainer = ({ currentStep, steps, children, handleNext, handlePrev 
             </>
           ) : (
             <>
-              Next <i className="fas fa-arrow-right"></i>
+              Next <FontAwesomeIcon icon={faArrowRight} />
             </>
           )}
         </button>

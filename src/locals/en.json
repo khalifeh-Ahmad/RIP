@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "about": "About",
+    "clients": "Clients",
+    "media": "Media",
+    "contact_us": "Contact Us",
+    "location": "Location"
+  },
+  "home": {
+    "fnPln": "Funeral Planning",
+    "legacyPlnSrv": "Legacy Planning Services",
+    "search": "Search",
+    "cancel": "Cancel"
+  }
+}

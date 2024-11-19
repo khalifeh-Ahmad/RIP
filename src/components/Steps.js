@@ -93,7 +93,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
             </TextField>
             <TextField
               label="Enter your budget"
-              type="number"
+              type="text"
               value={formData.budget}
               onChange={handleChange("budget")}
               error={!!errors.budget}
@@ -207,7 +207,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
             <>
               <TextField
                 label="Enter your budget"
-                type="number"
+                type="text"
                 value={formData.carServiceBudget || ""}
                 onChange={handleChange("carServiceBudget")}
                 error={!!errors.carServiceBudget}
@@ -251,7 +251,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
             <>
               <TextField
                 label="Enter your budget"
-                type="number"
+                type="text"
                 value={formData.flowerServiceBudget || ""}
                 onChange={handleChange("flowerServiceBudget")}
                 error={!!errors.flowerServiceBudget}
@@ -308,7 +308,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
           {formData.videoStreaming && (
             <TextField
               label="Enter your budget"
-              type="number"
+              type="text"
               value={formData.videoStreamingBudget || ""}
               onChange={handleChange("videoStreamingBudget")}
               error={!!errors.videoStreamingBudget}
