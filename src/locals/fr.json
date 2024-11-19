@@ -7,6 +7,12 @@
     "location": "Emplacement",
     "services": "Services"
   },
+  "slider": {
+    "WelEterSrv": "Bienvenue aux services d'adieu éternels",
+    "ProvSupPln": "Nous offrons un soutien attentionné pour vos besoins de planification",
+    "search": "Search",
+    "cancel": "Cancel"
+  },
   "home": {
     "fnPln": "Planification des funérailles",
     "legacyPlnSrv": "Services de planification successorale",

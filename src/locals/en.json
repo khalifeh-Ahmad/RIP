@@ -6,6 +6,12 @@
     "contact_us": "Contact Us",
     "location": "Location"
   },
+  "slider": {
+    "WelEterSrv": "Welcome to Eternal Farewell Services",
+    "ProvSupPln": "We provide compassionate support for your planning needs",
+    "search": "Search",
+    "cancel": "Cancel"
+  },
   "home": {
     "fnPln": "Funeral Planning",
     "legacyPlnSrv": "Legacy Planning Services",

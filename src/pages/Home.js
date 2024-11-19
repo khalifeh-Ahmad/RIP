@@ -5,6 +5,7 @@ import styled, { keyframes } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import HoverCard from "../components/HoverCard";
+import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -162,6 +163,7 @@ const AnimatedButton = styled(Button)`
   }
 `;
 const Home = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const handleStartPlanning = () => {
     navigate("/wizard");
@@ -190,7 +192,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
             >
-              Welcome to Eternal Farewell Services
+              {t("slider.WelEterSrv")}
             </Typography>
             <Typography
               variant="h6"
@@ -200,7 +202,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              We provide compassionate support for your planning needs.
+              {t("slider.ProvSupPln")}
             </Typography>
             <AnimatedButton
               variant="contained"
@@ -255,7 +257,7 @@ const Home = () => {
         <ParallaxImage src={Img1} />
         <Box onClick={handleStartPlanning}>
           <Typography variant="h4" gutterBottom>
-            Funeral Planning
+            {t("home.fnPln")}
           </Typography>
           <Typography variant="body1">
             Begin your personalized journey of planning a funeral service. Our
@@ -278,7 +280,7 @@ const Home = () => {
         />
         <Box>
           <Typography variant="h4" gutterBottom>
-            Legacy Planning Services
+            {t("home.legacyPlnSrv")}
           </Typography>
           <Typography variant="body1">
             Record meaningful messages and memories for your loved ones.
