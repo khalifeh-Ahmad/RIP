@@ -20,11 +20,11 @@ const Header = () => {
     <Navbar position="sticky">
       <Toolbar>
         <NavLogo src="/path/to/logo.png" alt="Logo" />
-        <Typography variant="h6" sx={{ flexGrow: 1, color: "#FFD700" }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, color: "#eeac0b" }}>
           Funeral Services
         </Typography>
         {navItems.map((item, index) => (
-          <Button key={index} sx={{ color: "#FFD700", textTransform: "none" }}>
+          <Button key={index} sx={{ color: "#eeac0b", textTransform: "none" }}>
             {item}
           </Button>
         ))}

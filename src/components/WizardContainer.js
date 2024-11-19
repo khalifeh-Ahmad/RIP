@@ -32,11 +32,11 @@ const Step = styled.div`
   position: relative;
   font-size: 16px;
   font-weight: bold;
-  color: ${({ isActive }) => (isActive ? "#FFD700" : "#666666")};
+  color: ${({ isActive }) => (isActive ? "#eeac0b" : "#666666")};
   cursor: ${({ isActive }) => (isActive ? "default" : "pointer")};
 
   &:hover {
-    color: ${({ isActive }) => (isActive ? "#FFD700" : "#CCCCCC")};
+    color: ${({ isActive }) => (isActive ? "#eeac0b" : "#CCCCCC")};
   }
 
   &::after {
@@ -44,7 +44,7 @@ const Step = styled.div`
     position: absolute;
     width: ${({ isActive }) => (isActive ? "100%" : "50%")};
     height: 3px;
-    background: ${({ isActive }) => (isActive ? "#FFD700" : "#444444")};
+    background: ${({ isActive }) => (isActive ? "#eeac0b" : "#444444")};
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -74,7 +74,7 @@ const Content = styled(motion.div)`
   }
 
   h2 {
-    color: #ffd700;
+    color: #eeac0b;
     margin-bottom: 20px;
   }
 
@@ -95,7 +95,7 @@ const ButtonGroup = styled.div`
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
-    background-color: #ffd700;
+    background-color: #eeac0b;
     color: #000000;
     font-weight: bold;
     font-size: 16px;
@@ -126,7 +126,7 @@ const ProgressBar = styled.div`
   div {
     width: ${({ currentStep, totalSteps }) => (currentStep / totalSteps) * 100}%;
     height: 100%;
-    background-color: #ffd700;
+    background-color: #eeac0b;
     transition: width 0.3s ease;
   }
 `;

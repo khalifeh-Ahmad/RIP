@@ -58,7 +58,7 @@ const HomeContainer = styled(Box)`
   animation: ${gradientAnimation} 30s ease infinite;
   background-position: center;
   background-size: cover;
-  color: #ffd700;
+  color: #eeac0b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ const HeroSection = styled(motion(Box))`
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #ffd700;
+    background-color: #eeac0b;
     opacity: 0;
     animation: ${heroFadeIn} 2.2s ease forwards;
   }
@@ -96,7 +96,8 @@ const HeroSection = styled(motion(Box))`
 `;
 
 const ParallaxSection = styled(motion(Box))`
-  background-color: rgba(68, 68, 68, 0.8);
+  background-color: rgba(68, 68, 68, 0.8) !important;
+  //background-color: gray !important;
   color: #ccc;
   padding: 50px;
   margin: 20px 0;
@@ -134,7 +135,7 @@ const ParallaxSection = styled(motion(Box))`
 `;
 
 const ParallaxImage = styled(motion.img)`
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-right: 20px;
   border-radius: 50%;
@@ -202,9 +203,9 @@ const Home = () => {
               color="primary"
               onClick={handleStartPlanning}
               sx={{
-                backgroundColor: "#FFD700",
+                backgroundColor: "#eeac0b",
                 color: "#000",
-                marginTop: "20px",
+                margin: "20px",
               }}
             >
               Start Planning Now

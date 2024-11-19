@@ -9,13 +9,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #FFD700; /* Gold headings */
+    color: #eeac0b; /* Gold headings */
     font-family: 'Playfair Display', serif;
   }
 
   a {
     text-decoration: none;
-    color: #FFD700; /* Gold links */
+    color: #eeac0b; /* Gold links */
     transition: color 0.3s ease;
   }
 
@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
 
   button {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFD700; /* Gold button */
+    background-color: #eeac0b; /* Gold button */
     color: #000000; /* Black text */
     border: none;
     padding: 10px 20px;

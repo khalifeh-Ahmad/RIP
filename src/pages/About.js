@@ -37,7 +37,7 @@ const AboutContainer = styled(Box)`
   animation: ${gradientAnimation} 30s ease infinite;
   background-position: center;
   background-size: cover;
-  color: #ffd700;
+  color: #eeac0b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

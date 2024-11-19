@@ -42,16 +42,16 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     variant: "outlined",
     sx: {
       backgroundColor: "#333",
-      color: "#FFD700",
+      color: "#eeac0b",
       '& .MuiOutlinedInput-root': {
         '& fieldset': {
-          borderColor: '#FFD700'
+          borderColor: '#eeac0b'
         },
         '&:hover fieldset': {
-          borderColor: '#FFD700'
+          borderColor: '#eeac0b'
         },
         '&.Mui-focused fieldset': {
-          borderColor: '#FFD700'
+          borderColor: '#eeac0b'
         },
         height: '56px', // Ensure consistent height
         width: '100%' // Ensure consistent width
@@ -63,7 +63,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
       }
     },
     InputLabelProps: {
-      style: { color: "#FFD700" }
+      style: { color: "#eeac0b" }
     },
     InputProps: {
       sx: {
@@ -76,7 +76,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 1:
       return (
         <div>
-          <h2 style={{ color: "#FFD700" }}>Step 1: Service Type</h2>
+          <h2 style={{ color: "#eeac0b" }}>Step 1: Service Type</h2>
           <form>
             <TextField
               select
@@ -106,7 +106,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 2:
       return (
         <div>
-          <h2 style={{ color: "#FFD700" }}>Step 2: Burial or Cremation</h2>
+          <h2 style={{ color: "#eeac0b" }}>Step 2: Burial or Cremation</h2>
           <TextField
             select
             label="Burial or Cremation"
@@ -125,7 +125,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 3:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 3: Insurance Details</h3>
+          <h3 style={{ color: "#eeac0b" }}>Step 3: Insurance Details</h3>
           <form onSubmit={continueStep}>
             <TextField
               select
@@ -156,11 +156,11 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
                   onClick={handlePolicyVerification}
                   disabled={loading}
                   startIcon={loading ? <CircularProgress size={20} /> : null}
-                  sx={{ backgroundColor: "#FFD700", color: "#000" }}
+                  sx={{ backgroundColor: "#eeac0b", color: "#000" }}
                 >
                   {loading ? "Verifying..." : "Verify Policy"}
                 </Button>
-                {verificationStatus && <p style={{ color: "#FFD700" }}>{verificationStatus}</p>}
+                {verificationStatus && <p style={{ color: "#eeac0b" }}>{verificationStatus}</p>}
               </div>
             )}
           </form>
@@ -169,7 +169,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 4:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 4: Location Selection</h3>
+          <h3 style={{ color: "#eeac0b" }}>Step 4: Location Selection</h3>
           <TextField
             select
             label="Select the location of the service"
@@ -191,7 +191,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 5:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 5: Car Service Option</h3>
+          <h3 style={{ color: "#eeac0b" }}>Step 5: Car Service Option</h3>
           <FormControlLabel
             control={
               <Checkbox
@@ -201,7 +201,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
               />
             }
             label="Would you like a car service?"
-            sx={{ color: "#FFD700" }}
+            sx={{ color: "#eeac0b" }}
           />
           {formData.carService && (
             <>
@@ -235,7 +235,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 6:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 6: Flower Service Option</h3>
+          <h3 style={{ color: "#eeac0b" }}>Step 6: Flower Service Option</h3>
           <FormControlLabel
             control={
               <Checkbox
@@ -245,7 +245,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
               />
             }
             label="Would you like a flower service?"
-            sx={{ color: "#FFD700" }}
+            sx={{ color: "#eeac0b" }}
           />
           {formData.flowerService && (
             <>
@@ -293,7 +293,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 7:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 7: Video Streaming Service Option</h3>
+          <h3 style={{ color: "#eeac0b" }}>Step 7: Video Streaming Service Option</h3>
           <FormControlLabel
             control={
               <Checkbox
@@ -303,7 +303,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
               />
             }
             label="Would you like to add a video streaming service?"
-            sx={{ color: "#FFD700" }}
+            sx={{ color: "#eeac0b" }}
           />
           {formData.videoStreaming && (
             <TextField
@@ -321,9 +321,9 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 8:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 8: Summary and Confirmation</h3>
-          <p style={{ color: "#FFD700" }}>Review your selections and confirm your booking:</p>
-          <ul style={{ color: "#FFD700" }}>
+          <h3 style={{ color: "#eeac0b" }}>Step 8: Summary and Confirmation</h3>
+          <p style={{ color: "#eeac0b" }}>Review your selections and confirm your booking:</p>
+          <ul style={{ color: "#eeac0b" }}>
             <li>Service Type: {formData.serviceType}</li>
             <li>Budget: ${formData.budget}</li>
             <li>Arrangement: {formData.arrangement}</li>
@@ -353,8 +353,8 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 9:
       return (
         <div>
-          <h3 style={{ color: "#FFD700" }}>Step 9: Payment</h3>
-          <p style={{ color: "#FFD700" }}>Please enter your payment details:</p>
+          <h3 style={{ color: "#eeac0b" }}>Step 9: Payment</h3>
+          <p style={{ color: "#eeac0b" }}>Please enter your payment details:</p>
           <form>
             <TextField
               label="Card Number"
@@ -385,7 +385,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
         </div>
       );
     default:
-      return <div style={{ color: "#FFD700" }}>Unknown Step</div>;
+      return <div style={{ color: "#eeac0b" }}>Unknown Step</div>;
   }
 };
 

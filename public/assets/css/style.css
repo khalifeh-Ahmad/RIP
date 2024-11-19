@@ -14,7 +14,7 @@ ol[role='list'] {
   list-style: none;
 }
 
-.logo{
+.logo {
   border-radius: 50%;
 }
 
@@ -70,7 +70,7 @@ html {
 }
 
 .top-navbar {
-  background: #2D393D;
+  background: #121313;
   width: 100%;
 }
 
@@ -104,7 +104,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='671' height='119' viewBox='0 0 671 119' fill='none'%3E%3Cg filter='url(%23filter0_b_53_4355)'%3E%3Cpath d='M599.219 4.24381C597.346 1.5831 594.296 0 591.042 0H10C4.47711 0 0 4.47715 0 10V109C0 114.523 4.47717 119 10 119H660.731C668.834 119 673.572 109.869 668.909 103.244L599.219 4.24381Z' fill='%23434D50'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b_53_4355' x='-100' y='-100' width='870.749' height='319' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='50'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_53_4355'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_53_4355' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='671' height='119' viewBox='0 0 671 119' fill='none'%3E%3Cg filter='url(%23filter0_b_53_4355)'%3E%3Cpath d='M599.219 4.24381C597.346 1.5831 594.296 0 591.042 0H10C4.47711 0 0 4.47715 0 10V109C0 114.523 4.47717 119 10 119H660.731C668.834 119 673.572 109.869 668.909 103.244L599.219 4.24381Z' fill='%23000000'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b_53_4355' x='-100' y='-100' width='870.749' height='319' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='50'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_53_4355'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_53_4355' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: right center;
@@ -119,7 +119,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='671' height='119' viewBox='0 0 671 119' fill='none'%3E%3Cg filter='url(%23filter0_b_53_4354)'%3E%3Cpath d='M71.7808 4.24381C73.6537 1.5831 76.7041 0 79.9579 0H661C666.523 0 671 4.47715 671 10V109C671 114.523 666.523 119 661 119H10.2685C2.16626 119 -2.5725 109.869 2.09131 103.244L71.7808 4.24381Z' fill='%23434D50'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b_53_4354' x='-99.749' y='-100' width='870.749' height='319' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='50'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_53_4354'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_53_4354' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='671' height='119' viewBox='0 0 671 119' fill='none'%3E%3Cg filter='url(%23filter0_b_53_4354)'%3E%3Cpath d='M71.7808 4.24381C73.6537 1.5831 76.7041 0 79.9579 0H661C666.523 0 671 4.47715 671 10V109C671 114.523 666.523 119 661 119H10.2685C2.16626 119 -2.5725 109.869 2.09131 103.244L71.7808 4.24381Z' fill='%23000000'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b_53_4354' x='-99.749' y='-100' width='870.749' height='319' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImageFix' stdDeviation='50'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_53_4354'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_53_4354' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: right center;
@@ -131,7 +131,7 @@ html {
 }
 
 .top-menu .logo {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='467' height='139' viewBox='0 0 467 139' fill='none'%3E%3Cpath d='M0 0H467L381.964 118.2C372.569 131.259 357.464 139 341.376 139H125.624C109.536 139 94.431 131.259 85.0359 118.2L0 0Z' fill='%23414141'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='467' height='139' viewBox='0 0 467 139' fill='none'%3E%3Cpath d='M0 0H467L381.964 118.2C372.569 131.259 357.464 139 341.376 139H125.624C109.536 139 94.431 131.259 85.0359 118.2L0 0Z' fill='%230f0e0e'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 25px 100px 25px 100px;
