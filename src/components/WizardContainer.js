@@ -10,7 +10,11 @@ import {
   Container as MuiContainer,
 } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faArrowLeft,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled(MuiContainer)`
   width: 80%;
@@ -175,7 +179,7 @@ const WizardContainer = ({
         <button onClick={handleNext}>
           {currentStep === steps.length ? (
             <>
-              <i className="fas fa-check"></i> Submit
+              <FontAwesomeIcon icon={faPaperPlane} /> Submit
             </>
           ) : (
             <>

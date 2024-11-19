@@ -1,10 +1,26 @@
-// Enhanced version of Steps.js
 import React, { useState } from "react";
 import { verifyPolicyNumber } from "../services/api";
-import { CircularProgress, Button, TextField, Checkbox, FormControlLabel, MenuItem } from "@mui/material";
+import {
+  CircularProgress,
+  Button,
+  TextField,
+  Checkbox,
+  FormControlLabel,
+  MenuItem,
+} from "@mui/material";
 
-const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) => {
-  const locationOptions = ["Central Chapel", "Greenwood Cemetery", "Memorial Gardens"];
+const Steps = ({
+  step,
+  handleChange,
+  formData,
+  handleCheckboxChange,
+  errors,
+}) => {
+  const locationOptions = [
+    "Central Chapel",
+    "Greenwood Cemetery",
+    "Memorial Gardens",
+  ];
   const [loading, setLoading] = useState(false);
   const [verificationStatus, setVerificationStatus] = useState(null);
 
@@ -43,33 +59,33 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     sx: {
       backgroundColor: "#333",
       color: "#eeac0b",
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-          borderColor: '#eeac0b'
+      "& .MuiOutlinedInput-root": {
+        "& fieldset": {
+          borderColor: "#eeac0b",
         },
-        '&:hover fieldset': {
-          borderColor: '#eeac0b'
+        "&:hover fieldset": {
+          borderColor: "#eeac0b",
         },
-        '&.Mui-focused fieldset': {
-          borderColor: '#eeac0b'
+        "&.Mui-focused fieldset": {
+          borderColor: "#eeac0b",
         },
-        height: '56px', // Ensure consistent height
-        width: '100%' // Ensure consistent width
+        height: "56px", // Ensure consistent height
+        width: "100%", // Ensure consistent width
       },
-      '& .MuiSelect-select': {
-        overflow: 'visible',
-        textOverflow: 'unset',
-        whiteSpace: 'normal'
-      }
+      "& .MuiSelect-select": {
+        overflow: "visible",
+        textOverflow: "unset",
+        whiteSpace: "normal",
+      },
     },
     InputLabelProps: {
-      style: { color: "#eeac0b" }
+      style: { color: "#eeac0b" },
     },
     InputProps: {
       sx: {
-        padding: '12px 14px' // Ensure consistent padding
-      }
-    }
+        padding: "12px 14px", // Ensure consistent padding
+      },
+    },
   };
 
   switch (step) {
@@ -160,7 +176,9 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
                 >
                   {loading ? "Verifying..." : "Verify Policy"}
                 </Button>
-                {verificationStatus && <p style={{ color: "#eeac0b" }}>{verificationStatus}</p>}
+                {verificationStatus && (
+                  <p style={{ color: "#eeac0b" }}>{verificationStatus}</p>
+                )}
               </div>
             )}
           </form>
@@ -293,7 +311,9 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
     case 7:
       return (
         <div>
-          <h3 style={{ color: "#eeac0b" }}>Step 7: Video Streaming Service Option</h3>
+          <h3 style={{ color: "#eeac0b" }}>
+            Step 7: Video Streaming Service Option
+          </h3>
           <FormControlLabel
             control={
               <Checkbox
@@ -322,7 +342,9 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
       return (
         <div>
           <h3 style={{ color: "#eeac0b" }}>Step 8: Summary and Confirmation</h3>
-          <p style={{ color: "#eeac0b" }}>Review your selections and confirm your booking:</p>
+          <p style={{ color: "#eeac0b" }}>
+            Review your selections and confirm your booking:
+          </p>
           <ul style={{ color: "#eeac0b" }}>
             <li>Service Type: {formData.serviceType}</li>
             <li>Budget: ${formData.budget}</li>
@@ -366,6 +388,7 @@ const Steps = ({ step, handleChange, formData, handleCheckboxChange, errors }) =
             />
             <TextField
               label="Expiry Date"
+              type="date"
               value={formData.expiry}
               onChange={(e) => handleChange("expiry")(e)}
               error={!!errors.expiry}
