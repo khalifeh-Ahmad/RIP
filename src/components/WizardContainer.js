@@ -1,13 +1,10 @@
-// Enhanced version of WizardContainer.js
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
   Container as MuiContainer,
+  Snackbar,
+  Alert,
 } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,7 +19,7 @@ const Container = styled(MuiContainer)`
   background-color: #333333;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  color: #cccccc;
+  color: wheat;
   padding: 20px;
 `;
 
@@ -45,31 +42,6 @@ const Step = styled.div`
   font-size: 16px;
   font-weight: bold;
   color: ${({ isActive }) => (isActive ? "#eeac0b" : "#666666")};
-  cursor: ${({ isActive }) => (isActive ? "default" : "pointer")};
-
-  &:hover {
-    color: ${({ isActive }) => (isActive ? "#eeac0b" : "#CCCCCC")};
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: ${({ isActive }) => (isActive ? "100%" : "50%")};
-    height: 3px;
-    background: ${({ isActive }) => (isActive ? "#eeac0b" : "#444444")};
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease;
-  }
-
-  @media (max-width: 768px) {
-    display: ${({ isActive }) => (isActive ? "block" : "none")};
-    font-size: 20px;
-    &::after {
-      width: 100%;
-    }
-  }
 `;
 
 const Content = styled(motion.div)`
@@ -150,7 +122,19 @@ const WizardContainer = ({
   children,
   handleNext,
   handlePrev,
+  formData,
+  setFormData,
+  errors,
+  setErrors,
 }) => {
+  const [isPaymentSuccessful, setIsPaymentSuccessful] = useState(false); // State for tracking success
+
+  const handleSubmit = () => {
+    // Add your form validation and submission logic here
+    // If validation passes, set the payment as successful
+    setIsPaymentSuccessful(true);
+  };
+
   return (
     <Container>
       <ProgressBar currentStep={currentStep} totalSteps={steps.length}>
@@ -176,18 +160,37 @@ const WizardContainer = ({
         <button onClick={handlePrev} disabled={currentStep === 1}>
           <FontAwesomeIcon icon={faArrowLeft} /> Back
         </button>
-        <button onClick={handleNext}>
-          {currentStep === steps.length ? (
-            <>
-              <FontAwesomeIcon icon={faPaperPlane} /> Submit
-            </>
-          ) : (
-            <>
-              Next <FontAwesomeIcon icon={faArrowRight} />
-            </>
-          )}
-        </button>
+        {currentStep < steps.length ? (
+          <button onClick={handleNext}>
+            Next <FontAwesomeIcon icon={faArrowRight} />
+          </button>
+        ) : (
+          <button onClick={handleSubmit}>
+            <FontAwesomeIcon icon={faPaperPlane} /> Submit
+          </button>
+        )}
       </ButtonGroup>
+
+      {/* Success Notification */}
+      <Snackbar
+        open={isPaymentSuccessful}
+        autoHideDuration={6000}
+        onClose={() => setIsPaymentSuccessful(false)}
+      >
+        <Alert
+          onClose={() => setIsPaymentSuccessful(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+          variant="filled"
+          component={motion.div}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          🎉 Payment successful! Thank you for completing your payment. 🎉
+        </Alert>
+      </Snackbar>
     </Container>
   );
 };

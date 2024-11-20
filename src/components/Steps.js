@@ -58,7 +58,7 @@ const Steps = ({
     variant: "outlined",
     sx: {
       backgroundColor: "#333",
-      color: "#eeac0b",
+      color: "wheat !important",
       "& .MuiOutlinedInput-root": {
         "& fieldset": {
           borderColor: "#eeac0b",
@@ -73,6 +73,7 @@ const Steps = ({
         width: "100%", // Ensure consistent width
       },
       "& .MuiSelect-select": {
+        color: "wheat",
         overflow: "visible",
         textOverflow: "unset",
         whiteSpace: "normal",
@@ -405,6 +406,9 @@ const Steps = ({
               {...commonTextFieldProps}
             />
           </form>
+          {verificationStatus && (
+            <p style={{ color: "#eeac0b" }}>{verificationStatus}</p>
+          )}
         </div>
       );
     default:
